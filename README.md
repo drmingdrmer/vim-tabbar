@@ -2,9 +2,9 @@
 
 Clean and quick tab-bar for VIM.
 
-It displays shortened buffer names in the top row of window.
+Names of opened buffer are shortened and shows on the top row of window.
 
-Tab button is rendered with one of these three highlight:
+Tab button uses one of these three highlight for different states:
 
 -   `TabLineFill`: inactive buffer(**grey text on cyan background**).
 -   `TabLine`: in one of the windows but not focused(**white text on dark cyan background**).
@@ -24,10 +24,10 @@ git clone git://github.com/drmingdrmer/vim-tabbar.git
 
 Or just copy all of the files in to `~/.vim`.
 
-##  Customize Highlight
+##  Customizing Colors
 
-Three high light setting in color scheme file(`~/.vim/colors/**.vim`)
-is used by this plugin:
+Three high light settings in color scheme file(`~/.vim/colors/**.vim`)
+are used by this plugin:
 
 ```vim
 hi TabLineFill cterm=none ctermfg=grey  ctermbg=cyan
