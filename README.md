@@ -1,6 +1,6 @@
 # vim-tabbar
 
-Clean and quick tab-bar for VIM.
+Simple, stupid and fast tab-bar for VIM.
 
 Names of opened buffer are shortened and shows on the top row of window.
 
