@@ -17,7 +17,7 @@ Tab button uses one of these three highlight for different states:
 Installing with [pathogen.vim](https://github.com/tpope/vim-pathogen)
  is recommended. Copy and paste:
 
-```shell
+```sh
 cd ~/.vim/bundle
 git clone git://github.com/drmingdrmer/vim-tabbar.git
 ```
