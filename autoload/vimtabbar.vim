@@ -73,7 +73,7 @@ fun! s:TabLabel(i) "{{{
     let text = ""
 
     if mod == 1
-        let text = "+"
+        let text = " +"
     endif
 
     return text . s:BufLabel(a:i)
