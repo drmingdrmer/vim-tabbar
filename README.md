@@ -1,20 +1,5 @@
 # vim-tabbar
 
-## Preface
-
-This is a fork of [drmingdrmer/vim-tabbar](https://github.com/drmingdrmer/vim-tabbar), which was the closest plugin to the functionality I wanted out of my tab bar.
-
-There are exactly two differences between this fork and the original:
-
-1. `"[No Name]" -> " [No Name] "`, to fix the spacing.
-2. There is now a middle-man function `TabLabel` which returns exactly what `BufLabel` returns, plus a `+` if the file is modified.
-
-TL;DR - I made it behave more like the *built-in* tabline.
-
-So if you're using drmingdrmer's buftabline and find yourself hurting for that little `+` to let you know the buffer is modified, this fork is for you.
-
-## Original Readme
-
 Simple, stupid and fast tab-bar for VIM.
 
 Names of opened buffer are shortened and shows on the top row of window.
