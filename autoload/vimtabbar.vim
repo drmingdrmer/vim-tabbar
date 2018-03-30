@@ -13,7 +13,7 @@ fun! vimtabbar#Build() "{{{
             continue
         endif
 
-        let name = s:BufLabel(i)
+        let name = s:TabLabel(i)
 
         let synname = 'TabLineFill'
         if cur == i
@@ -51,6 +51,7 @@ fun! vimtabbar#Build() "{{{
     let rst = ''
     for elt in names
         let rst .= '%#' . elt['syn'] . '#' . elt['text'] . '%0*'
+
     endfor
     return rst
 endfunction "}}}
@@ -67,10 +68,21 @@ fun! s:IsVisible(i) "{{{
     return 1
 endfunction "}}}
 
+fun! s:TabLabel(i) "{{{
+    let mod = getbufvar(a:i, "&mod")
+    let text = ""
+
+    if mod == 1
+        let text = "+"
+    endif
+
+    return text . s:BufLabel(a:i)
+endfunction"}}}
+
 fun! s:BufLabel(i) "{{{
     let path = bufname(a:i)
     if path == ""
-        return '[No Name]'
+        return ' [No Name] '
     endif
 
     let path = s:PathForHuman(path)
